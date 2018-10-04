@@ -1,9 +1,10 @@
-baseurl = "https://example.com/"
+baseurl = "https://magic-lantern.github.io"
 title = "Seth Russell"
 theme = "ghostwriter"
 languageCode = "en-us"
 copyright = "Seth Russell"
-googleAnalytics = "XXX"
+googleAnalytics = "UA-127048637-1"
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
 [Privacy]
 
@@ -17,7 +18,7 @@ googleAnalytics = "XXX"
 
 [Author]
     name = "Seth Russell"
-    profile = "https://google.com/+XXX"
+    profile = ""
 
 [Taxonomies]
     tag = "tags"
@@ -25,7 +26,7 @@ googleAnalytics = "XXX"
 [Params]
     intro = true
     headline = "Seth Russell"
-    description = ""
+    description = "informatics, software engineering, data science, and healthcare research blog"
     github = "https://github.com/magic-lantern"
     linkedin = "https://www.linkedin.com/in/seth-russell"
     twitter = "https://twitter.com/magic__lantern"
@@ -56,11 +57,6 @@ googleAnalytics = "XXX"
     weight = 2
 
 [[menu.main]]
-    name = "Contact"
-    url = "/page/contact/"
-    weight = 3
-
-[[menu.main]]
     name = "About"
     url = "/page/about/"
-    weight = 4
+    weight = 3
