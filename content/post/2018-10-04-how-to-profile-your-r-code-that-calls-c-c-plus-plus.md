@@ -2,13 +2,15 @@
 title: 'How to profile your R code that calls C/C++ '
 author: Seth Russell
 date: '2018-10-04'
-slug: how-to-profile-your-r-code-that-calls-c-c-plus-plus
 categories:
   - R
 tags:
-  - profiling
   - optimization
-description: 'When profiling R code, the details and performance of any C/C++ code is hidden behind .Call(). This post describes how to get details on what the C/C++ code is doing.'
+  - profiling
+slug: how-to-profile-your-r-code-that-calls-c-c-plus-plus
+description: When profiling R code, the details and performance of any C/C++ code
+  is hidden behind .Call(). This post describes how to get details on what the C/C++
+  code is doing.
 ---
 
 While there are many options for profiling C++ (or other compiled code) on Linux, many of those tools are difficult to get working correctly with R. Additionally, profiling R code with C++ is complicated due to different settings between various commonly use OSes. While there are some blog posts and presentation materials available on the Internet, many miss important steps that take some effort to determine the correct solution to resolve.
