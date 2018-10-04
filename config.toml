@@ -1,0 +1,66 @@
+baseurl = "https://example.com/"
+title = "Seth Russell"
+theme = "ghostwriter"
+languageCode = "en-us"
+copyright = "Seth Russell"
+googleAnalytics = "XXX"
+
+[Privacy]
+
+[Privacy.disqus]
+    disable = true
+
+[Privacy.googleAnalytics]
+    anonymizeIP = false
+    respectDoNotTrack = true
+    useSessionStorage = false
+
+[Author]
+    name = "Seth Russell"
+    profile = "https://google.com/+XXX"
+
+[Taxonomies]
+    tag = "tags"
+
+[Params]
+    intro = true
+    headline = "Seth Russell"
+    description = ""
+    github = "https://github.com/magic-lantern"
+    linkedin = "https://www.linkedin.com/in/seth-russell"
+    twitter = "https://twitter.com/magic__lantern"
+    opengraph = true
+    shareTwitter = true
+    shareFacebook = true
+    shareGooglePlus = true
+    shareLinkedIn = true
+    dateFormat = "Mon, Jan 2, 2006"
+    highlightJsUrl = ""
+    highlightJsLocalUrl = ""
+    exponeaJsUrl = ""
+    exponeaTarget = ""
+    exponeaToken = ""
+    exponeaTrackVisits = false
+
+[Permalinks]
+    post = "/:year/:month/:day/:filename/"
+
+[[menu.main]]
+    name = "Blog"
+    url = "/"
+    weight = 1
+
+[[menu.main]]
+    name = "Projects"
+    url = "/project/"
+    weight = 2
+
+[[menu.main]]
+    name = "Contact"
+    url = "/page/contact/"
+    weight = 3
+
+[[menu.main]]
+    name = "About"
+    url = "/page/about/"
+    weight = 4
