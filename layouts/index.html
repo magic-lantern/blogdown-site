@@ -1,0 +1,28 @@
+{{ partial "header.html" . }}
+
+<div id="post-index" class="container" itemscope="" itemtype="https://schema.org/Blog">
+    {{ partial "intro.html" . }}
+
+    <ol class="post-list">
+        {{ $pag := .Paginate (where .Data.Pages "Type" "post") }}
+        {{ range $pag.Pages }}
+            {{ partial "post-stub.html" . }}
+        {{ end }}
+    </ol>
+
+    <div class="post-navigation">
+        {{ partial "pagination.html" . }}
+    </div>
+</div>
+
+<div id="usefullinks" class="container">
+  <h4>further reading</h4>
+  <ul>
+    <li><a href="https://simplystatistics.org">Simplystatistics - Biostats Profs Blogs</a></li>
+    <li><a href="http://joelgrus.com">Joel Grus blog</a></li>
+    <li><a href="https://yihui.name/en/">Yihui's Blog</a></li>
+    <li><a href="http://www.r-bloggers.com/">R Bloggers</a></li>
+  </ul>
+</div>
+  
+{{ partial "footer.html" . }}

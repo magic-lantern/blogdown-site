@@ -1,14 +1,14 @@
 ---
 title: 'How to profile your R code that calls C/C++ '
 author: Seth Russell
-date: '2018-10-04'
+date: '2018-10-05'
 categories:
   - R
 tags:
+  - blog
   - optimization
   - profiling
   - R
-  - blog
 slug: how-to-profile-your-r-code-that-calls-c-c-plus-plus
 description: When profiling R code, the details and performance of any C/C++ code
   is hidden behind .Call(). This post describes how to get details on what the C/C++
@@ -45,7 +45,7 @@ Here are some basic steps to get it working:
 
 Xcode Instruments screenshot showing C++ code from [PCCC](https://cran.r-project.org/package=pccc) R package
 
-![Xcode Instruments screenshot showing profiling of R code that calls C/C++](/post/2018-10-04-how-to-profile-your-r-code-that-calls-c-c-plus-plus_files/instruments_screenshot.png)
+![Xcode Instruments screenshot showing profiling of R code that calls C/C++](/post/2018-10-05-how-to-profile-your-r-code-that-calls-c-c-plus-plus_files/instruments_screenshot.png)
 
 For users on Windows, the GPL licensed [Very Sleepy](http://www.codersnotes.com/sleepy/) is an excellent GUI profilier that works almost identically to Xcode Instruments for CPU Profiling.
 
