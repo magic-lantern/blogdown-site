@@ -9,14 +9,6 @@ tags:
 slug: pediatric-complex-chronic-conditions
 ---
 
-We've published a research letter in JAMA Pediatrics on this R package:
-
-https://jamanetwork.com/journals/jamapediatrics/fullarticle/2677901
-
-For source code see:
-
-https://github.com/CUD2V/pccc
-
 ## Motivation
 Version 2 of the Pediatric Complex Chronic Conditions (CCC) system was published 
 ["Pediatric complex chronic conditions classification system version
@@ -58,3 +50,13 @@ If you are on a Linux machine or have GNU `make` configured you should be able
 to build and install this package by cloning the repository and running
 
     make install
+
+## More project information
+
+We've published a research letter in JAMA Pediatrics on this R package:
+
+https://jamanetwork.com/journals/jamapediatrics/fullarticle/2677901
+
+For source code see:
+
+https://github.com/CUD2V/pccc
