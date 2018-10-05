@@ -44,7 +44,6 @@ Here are some basic steps to get it working:
 1. Find your custom function calls in the symbol tree. There will likely be many layers before your code is called. The call just before your code will be “do_dotcall” The symbol tree should show your custom function names and how long each took.
 
 Xcode Instruments screenshot showing C++ code from [PCCC](https://cran.r-project.org/package=pccc) R package
-![Xcode Instruments screenshot showing C++ code from PCCC R package](https://github.com/magic-lantern/SoftwareEngineeringPrinciples/raw/master/paper/instruments_screenshot.png "Xcode Instruments screenshot showing C++ code from PCCC R package")
 
 ![Xcode Instruments screenshot showing profiling of R code that calls C/C++](/post/2018-10-04-how-to-profile-your-r-code-that-calls-c-c-plus-plus_files/instruments_screenshot.png)
 
