@@ -1,14 +1,12 @@
 +++
 title = "About"
-date = 2015-04-03T02:13:50Z
-author = "My Name"
-description = "Things about me."
+date = 2018-10-04T02:13:50Z
+author = "Seth Russell"
+description = "Things about Seth."
 +++
 
 ## About
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec dolor in magna lobortis egestas. Suspendisse eu erat tempor, tristique neque eu, convallis nulla. Curabitur vel bibendum lacus, at semper mauris. Suspendisse aliquet commodo ex, sed sagittis metus aliquam id. Maecenas feugiat rutrum lorem vel imperdiet. Nullam ornare lectus ut enim finibus, et porttitor mi tincidunt. Aenean lacinia, leo quis vehicula eleifend, quam libero sagittis erat, at euismod augue mauris et sapien. Sed id vehicula lectus, sit amet auctor ipsum. Nunc sed massa vel ex condimentum aliquam in a enim. Cras enim sem, tristique eu enim ac, congue commodo mi. Integer quis orci at dolor blandit eleifend.
+As an infomatician and experienced software engineer I help with the crucial effort of improving health care and reducing health care costs through the appropriate use of information technology. My experience and education provides me with the ability to develop requirements, build solutions, and test the success of a chosen solution. I have experience with commercial software such as Cerner Millennium Electronic Health Record (EHR) and Oracle Hyperion, standards based platforms such as SMART on FHIR and InfoButtons, and build from scratch tools and techniques. My domains of interest are clinical information retrieval and extraction, imaging informatics, quality control and reporting, and the use of standards to improve the exchange of information as well as consistency of clinical care. As a software engineer and informatics researcher I'm always excited to try new tools and techniques and then make recommendations for their continued use or abandonment.
 
-## School
-
-Sed quis pulvinar nisi, sed dapibus lacus. Mauris tempus ex ut ipsum facilisis interdum. Integer feugiat urna sed feugiat tempor. Quisque dictum vestibulum feugiat. Nunc nec est volutpat lorem imperdiet egestas sit amet ut orci. Aliquam venenatis neque ipsum, a placerat lectus cursus at. Donec pellentesque tellus hendrerit faucibus posuere. Etiam gravida consequat lectus, volutpat consectetur velit convallis nec. Praesent sagittis luctus dignissim.
+*Coming Soon:* CV

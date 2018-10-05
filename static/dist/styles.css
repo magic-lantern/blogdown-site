@@ -106,14 +106,14 @@ table tr { border-bottom: 1px dotted #aeadad; }
 .button-square:hover { background: #303030; }
 .error { text-align: center; }
 .comments { margin-top: 10px; }
-.site-header { padding: 20px 0 0; overflow: auto; text-align: center; text-transform: uppercase; }
+.site-header { padding: 15px 0 0; overflow: auto; text-align: center; text-transform: uppercase; }
 .site-title-wrapper { display: table; margin: 0 auto; }
 .site-title { float: left; font-size: 14px; font-weight: 600; margin: 0; text-transform: uppercase; }
 .site-title a { float: left; background: #f03838; color: #fefefe; padding: 5px 10px 6px; }
 .site-title a:hover { background: #303030; }
 .site-logo { display: block; }
 .site-logo img { margin: 0; }
-.site-nav { list-style: none; margin: 20px 0 10px; padding: 0; }
+.site-nav { list-style: none; margin: 15px 0 0px; padding: 0; }
 .site-nav-item { display: inline-block; font-size: 14px; font-weight: 700; margin: 0 10px; }
 .site-nav-item a:hover { color: #424242; }
 #latest-post { display: none; }
