@@ -1,12 +1,12 @@
 ---
-title: 'R Package for Pediatric Complex Chronic Condition Classification'
+title: R Package for Pediatric Complex Chronic Condition Classification
 author: Seth Russell
 date: '2018-09-27'
-slug: pediatric-complex-chronic-conditions
 categories:
   - R
-tags: []
-description: ''
+tags:
+  - R
+slug: pediatric-complex-chronic-conditions
 ---
 
 We've published a research letter in JAMA Pediatrics on this R package:
