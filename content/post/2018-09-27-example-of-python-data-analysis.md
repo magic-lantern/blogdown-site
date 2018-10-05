@@ -5,10 +5,11 @@ date: '2018-09-27'
 categories:
   - Python
 tags:
+  - bigquery
   - data analysis
   - google cloud
   - python
-  - bigquery
+  - blog
 slug: example-of-python-data-analysis
 description: A demonstration of a few of the things you can do to analyze data stored
   in Google BigQuery using Python.

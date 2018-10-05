@@ -8,6 +8,7 @@ tags:
   - optimization
   - profiling
   - R
+  - blog
 slug: how-to-profile-your-r-code-that-calls-c-c-plus-plus
 description: When profiling R code, the details and performance of any C/C++ code
   is hidden behind .Call(). This post describes how to get details on what the C/C++

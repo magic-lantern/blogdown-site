@@ -6,8 +6,9 @@ categories:
   - Python
 tags:
   - phi
-  - synthetic data
   - python
+  - synthetic data
+  - project
 slug: kung-faux-pandas
 description: A data synthesis tool to simplify privacy preservation
 ---
