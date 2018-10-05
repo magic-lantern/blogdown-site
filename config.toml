@@ -2,9 +2,10 @@ baseurl = "https://magic-lantern.github.io"
 title = "Seth Russell"
 theme = "ghostwriter"
 languageCode = "en-us"
-copyright = "Seth Russell"
+copyright = "This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License."
 googleAnalytics = "UA-127048637-1"
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+rssLimit = 10
 
 [Privacy]
 
