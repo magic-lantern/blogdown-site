@@ -1,0 +1,144 @@
+---
+title: Seth Russell curriculum vitae
+author: Seth Russell
+date: '2018-10-15'
+slug: cv
+description: ''
+output:
+  blogdown::html_page:
+    toc: true
+---
+
+## Professional Experience
+
+**Research Instructor** – University of Colorado Denver Anschutz Medical Campus, Aurora, CO  
+June 2017 – Present
+
+*	Major contributor as Senior Analyst and Data Scientist in the Analytics core of [CU Data Science to Patient Value](http://cud2v.org)
+*	Participated in requirements gathering, vendor review, and cloud platform solution evaluation for cloud hosted research analytics environment.
+*	Developed R package for identifying pediatric complex chronic conditions based on ICD9/ICD10 codes.
+* Created comparitive analysis of custom sepsis prediction model vs Epic sepsis model
+* Developed Python Pandas extension for data synthesis
+* Aided in defining and evaluating cloud based platform for computational researchers
+
+**Senior Software Engineer** Intermountain Healthcare Transformation Lab, Salt Lake City, UT  
+October 2014 – May 2017
+
+*	Research and prototyping of new software and hardware technologies for health care applications.
+*	Developed in-patient communication and engagement platforms that integrated Cerner data via Millennium Objects, environmental lighting and HVAC controls, patient education, speech recognition, natural language processing, Solr integration, and other technologies.
+*	Evaluation of Real Time Location Services (RTLS) and data mining of RTLS data as part of process to determine best RTLS solution and systems for health care needs. Evaluation included writing of health care specific RTLS asset tracking/management white paper.
+*	Created video feedback recording station for conference floor feedback
+*	Created prototype voice and text translation application for use in clinical settings
+*	Analyze data from pilot projects through market comparison, sample size calculations, power calculations, data visualization, and regression analysis.
+
+**Senior Software Engineer, Team Lead** Intermountain Healthcare, Salt Lake City, UT  
+August 2008 – October 2014
+
+*	Lead a team of experienced Software Engineers and Application Administrators that specialize in corporate solutions in the domain of financial and administrative needs for healthcare.
+*	Managed department level yearly operating budget (2.5+ million) as well as IT capital budget requests as needs arose.
+*	Guide, support, and participate in the development of custom applications as well as COTS applications that interface with and extend Oracle's E-Business (HRMS), our custom general ledger, Kronos Workforce Scheduler/Time Keeper/Analytics, Oracle's Hyperion Essbase/Planning, and Optilink+.
+*	Support Central Operating Budget group by extending, maintaining, and upgrading Oracle Hyperion Essbase, Oracle Hyperion Planning, Oracle Application Express (Apex), various MS Access applications, and VBA in MS Excel.
+*	Developed and maintained custom ETL and Oracle Data Integrator processes between a custom and vended systems in support of financial and administrative business needs.
+*	Brought about major shifts in the team's software development practices including load testing/test automation, use of Java Stored Procedures in the Oracle database, and migration of software versioning systems from Serena Changeman/PVCS to Subversion.
+*	Other leadership areas include performing Financial Reporting Controls audits (SOX for non-profits), creation and review of disaster recovery plans, creation and monitoring of operating and capital budgets.
+
+**Software Engineer Consultant**  
+June 2003– January 2006, August 2008 – December 2008
+
+*	Improved Omniture integration with sporting goods e-commerce site.
+*	Developed integration components for FAST search engine integration with e-commerce site.
+*	Designed and developed a Java/XML based industrial refrigeration load calculation program – resulting in 3 1⁄2 hours time saved in calculations for engineers.
+*	Designed and developed on-line application system (Perl, JavaScript, PostgreSQL) for people to apply to be stunt doubles.
+
+**Engineering Team Lead** Backcountry.com, Park City, UT  
+July 2006 – August 2008
+
+*	Lead teams of 3 – 8 engineers composed of junior to senior developers.
+*	Lead engineering implementation of WhiskeyMilitia.com, Checkout Redesign, Question and Answer functionality, and site optimization efforts for $130M+ e-commerce site.
+*	Organized software support processes using Bugzilla, MediaWiki, and frequent meetings with customers, leading to faster issue resolution and increased customer satisfaction
+*	Provided technical direction, code reviews, and design guidance for team members
+*	Developed new site functionality and interfaces using Perl and custom MVC framework (Moose, Rose::DB, and other CPAN modules), Interchange, Javascript/Ajax/YUI
+*	Acted as a key participant in interviewing, hiring, and training new engineers
+*	Lead migration of source code management from CVS to Git
+
+**Programmer Analyst** University of California, Santa Cruz, CA  
+September 2003 – February 2007
+
+*	Modified Narrative Evaluation System to achieve integration of data with PeopleSoft Student Administration.
+*	Extended the Graduate Admissions Review Portal to interface with PeopleSoft SA; stream- lined code and processes to improve application performance
+*	Develop Financial Aid Extract to University of California Office of the President.
+*	Met with customers, spec'd, and developed Identity Management extracts.
+*	Designed and developed a template based Mass Mailing System
+*	Installed and customized Bugzilla to use in tracking bugs with UCSC Academic Information Systems
+*	Setup and administered CVS, PHP, Apache, MySQL, PeopleSoft SA and Portal, Cisco content switches, Cognos Business Intelligence suite, small applications Linux servers
+
+**Systems Analyst/Programmer** Central Washington University, Ellensburg, WA  
+January 2002 – June 2003
+
+*	Extended and supported custom PowerHouse based Parking application on OpenVMS VAX.
+*	Resolved desktop issues for student and staff users on Win95-XP and Mac desktops
+*	Developed an inventory and sales management system with VB and MS Access to replace abandoned db4 system.
+*	Technical advisor for process of replacing 15 year old parking management software.
+*	Worked as part of a team to develop a call management system for user support using PHP, JavaScript, MySQL, Apache, and SSH on Linux.
+
+**Prior Experience**
+
+I've been working for so long, previous experience is likely not relevant
+
+## Selected Skills
+
+**Software Engineering** Source Code Management, Model-View-Controller, Waterfall and Agile development methodologies, data model design, Object Relational Mapping, ETL  
+**Informatics** Clinical Decision Support, Information Retrieval, Information Extraction, HL7 Standards	(HL7v2, FHIR, InfoButton), research design, statistical methods and analysis  
+**Business** Systems Lifecycle Analysis, Business Management, Software Project Management, Production Management, Scheduling, Statistical Analysis, Financial Analysis, Code Management, Reporting  
+**Database** PostgreSQL, SQLite, Essbase, Oracle (PL/SQL, Forms/Reports, Data Integrator), MySQL, MongoDB, SQL Server  
+**Operating Systems/Platforms** Linux (Redhat/Debian), Windows NT - 2012, macOS, Docker, VMware ESX, Solaris	8 & 10, OpenVMS 7.3, BSD  
+**Programming Languages** Python, R, Javascript, Java, Oracle APEX, C#, Perl, PHP, BASH, C/C++, Visual Basic/ASP 	(6 and .Net), SQR, PeopleCode, PowerHouse  
+**Web Frameworks/Utilites/Platforms** Ember.js, jQuery, Bootstrap, YUI, WebRTC, HTML5, CSS3, Nginx, Apache, Node.js, IIS, Weblogic  
+
+
+## Education
+
+**Master of Science**  
+Biomedical Informatics (2016) - Capstone Project: Identification and Automation of Quality Metrics for Radiology Reporting in CT Pulmonary Angiography  
+University of Utah, Salt Lake City, UT
+
+**Bachelor of Science**  
+Business Administration (2003) Operations Management and IS Specialization  
+Computer Science (2003) Artificial Intelligence Specialization  
+Central Washington University, Ellensburg, WA  
+*Summa Cum Laude*
+
+## Technical Training
+
+* Oracle SOA Suite
+* Oracle SOA Service Bus Design
+* Oracle Application Integration Architecture
+* 123OLAP Applied Essbase
+* 123OLAP Applied Planning
+* 123OLAP Applied Planning Power User
+
+## Licenses and Certifications
+
+* Google Cloud Platform Essentials – Qwiklabs 2017
+* Citi, Human Research, Biomedical Research Investigators and Key Personnel – 2017
+* [Oracle Certified Associate, Java SE 8 Programmer](https://www.youracclaim.com/badges/1da472f8-d67d-4d3f-a2c9-d205b6040a81/public_url) - 2016
+* OWASP Top 10 Web Application Security – 2016
+* [Citi, Human Research, Biomedical Research Investigators and Key Personnel](https://www.citiprogram.org/verify/?w0795e059-ab8e-4701-a5f4-7fd457b665a8-22064244) - 2016
+* Citi Responsible Conduct of Research – 2015
+* Cerner Millennium Foundation Certified – 2015
+* ITIL V3 Foundation Certified - 2010
+* FCC Amateur Radio License – General Class – 2010
+
+## Technical Presentations
+
+* An R Package: Pediatric Complex Chronic Conditions & Integrating Python and R *BIOS 6640 Nov 2017*
+* [Data Science to Patient Value & KDD 2017](https://github.com/magic-lantern/biostatistics-seminar-2017) *Biostatistics Seminar Sept 2017*
+* CDS for Pediatric Antibiotics using SMART on FHIR *FHIR SIG April 2016*
+* VirtualBox - How to setup and benefit from virtualization *Utah Oracle User's Group Mar 2012*
+* Java Stored Procedures in an Oracle DB *Utah Oracle User's Group Oct 2010*
+
+## Publications
+
+* Feinstein JA, Russell S, DeWitt PE, Feudtner C, Dai D, Bennett TD. [R Package for Pediatric Complex Chronic Condition Classification](https://jamanetwork.com/journals/jamapediatrics/fullarticle/2677901). JAMA Pediatr. 2018;172(6):596-598. doi:10.1001/jamapediatrics.2018.0256
+* Others currently under review related to current research at University of Colorado Anschutz Medical Campus
+

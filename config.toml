@@ -62,3 +62,8 @@ rssLimit = 10
     name = "About"
     url = "/page/about/"
     weight = 3
+
+[[menu.main]]
+    name = "CV"
+    url = "/page/cv"
+    weight = 4
