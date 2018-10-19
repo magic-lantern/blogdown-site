@@ -12,11 +12,13 @@ tags:
 description: ''
 ---
 
-*Note:* This post is a work in progress. Need to verify websockets setup - if it works, document here!
+*Note:* Last updated October 19, 2018. This post is a work in progress.
 
-Google Cloud has a wide range of services available. [RStudio Server](https://www.rstudio.com/products/rstudio-server-pro/)  ([download](https://www.rstudio.com/products/rstudio/download-server/)), is feature comparable to the desktop software [RStudio IDE](https://www.rstudio.com/products/rstudio/). RStudio Server is available under two different licensing models: "Open Source Edition: (AGPL v3), and "Commercial License."
+[RStudio Server](https://www.rstudio.com/products/rstudio-server-pro/)  ([download](https://www.rstudio.com/products/rstudio/download-server/)), is feature comparable to the desktop software [RStudio IDE](https://www.rstudio.com/products/rstudio/). RStudio Server is available under two different licensing models: "Open Source Edition: (AGPL v3), and "Commercial License."
 
-In this post, I'll be setting up the Open Source Edition. Total estimated cost per month if the system is running 24x7: $202.68/month. Cost is much less if you only run the system as needed (business hours only would cost about $45/month)
+Google Cloud has a wide range of services available. Everything from machine learning APIs to development environments to database as a service. However, one thing they don't have is a good R environment for development of R packages or analysis. I've found the most flexible option to get a great R environment on Google Cloud is to use a Google Compute Engine instance (GCE) - Google's cloud hosted virtual machine platform.
+
+In this post, I'll be setting up the Open Source Edition of RStudio Server. Total estimated cost per month if the system is running 24x7: $202.68/month. Cost is much less if you only run the system as needed (business hours only would cost about $45/month)
 
 
 Steps:
@@ -63,10 +65,38 @@ Steps:
       1. Remove the default site from being served, but keep the configuration for reference: `sudo rm /etc/nginx/sites-enabled/default`
       1. Make sure Nginx still works - `sudo systemctl restart nginx`
   1. `sudo certbot --nginx`
-1. Setup Nginx to proxy RStudio Server via https port. Follow instructions similar to https://www.digitalocean.com/community/tutorials/how-to-configure-nginx-with-ssl-as-a-reverse-proxy-for-jenkins
-  1. Modify the :443 portion to do the https proxy - see location{} section
+1. Setup Nginx to proxy RStudio Server via https port. Follow instructions similar to https://www.digitalocean.com/community/tutorials/how-to-configure-nginx-with-ssl-as-a-reverse-proxy-for-jenkins and https://support.rstudio.com/hc/en-us/articles/200552326-Configuring-the-Server/
+  1. Modify the :443 portion to do the https proxy - this goes in a location{} section; the key lines are:
+      ```
+      proxy_set_header        Host $host;
+      proxy_set_header        X-Real-IP $remote_addr;
+      proxy_set_header        X-Forwarded-For $proxy_add_x_forwarded_for;
+      proxy_set_header        X-Forwarded-Proto $scheme;
+      # adjust these two lines to match your RStudio Server port
+      proxy_pass          http://localhost:8787;
+      proxy_redirect      http://localhost:8787 $scheme://$http_host/;
+      ```
+      
+  1. In order to get the websockets component working, you need to modify /etc/nginx/nginx.conf and add the following section inside the http{} block:
+      ```
+      map $http_upgrade $connection_upgrade {
+        default upgrade;
+        ''      close;
+      }
+      ```
+      
+  1. Add the following lines to your server{} block:
+      ```
+      proxy_http_version 1.1;
+      proxy_set_header Upgrade $http_upgrade;
+      proxy_set_header Connection $connection_upgrade;
+      proxy_read_timeout 7d; # want something long so websocket doesn't automatcailly close on user
+      ```
+      
+  1. Symlink your `/etc/nginx/sites-available` file to `/etc/nginx/sites-enabled` sites-enabled is the directory that the nginx server will look in when starting up.
   1. Resulting nginx configuration file should look like: https://gist.github.com/magic-lantern/1b5e11c3cf5964b69e8e7824df015c5d
-
+  1. Before restarting nginx, test your configuration by running `nginx -t`. Fix any errors before restarting with `systemctl restart nginx`
+  
 
 Some URLs for additional information:
 
