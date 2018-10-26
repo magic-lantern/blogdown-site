@@ -9,7 +9,7 @@ tags:
   - blog
   - R
   - google cloud
-description: ''
+description: 'How to setup a Google Compute Engine instance to host your own RStudio Server'
 ---
 
 *Note:* Last updated October 19, 2018. This post is a work in progress.
@@ -47,13 +47,13 @@ Steps:
   1. `sudo apt-get upgrade`
   1. `apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E298A3A825C0D65DFD57CBB651716619E084DAB9`
   1. add this line to /etc/apt/sources.list: `deb https://cloud.r-project.org/bin/linux/ubuntu bionic-cran35/`
-  1. `sudo apt-get install r-base r-base-dev gdebi-core`
+  1. `sudo apt-get install r-base r-base-dev gdebi-core git subversion`
   1. `wget https://download2.rstudio.org/rstudio-server-1.1.456-amd64.deb`
   1. `sudo gdebi rstudio-server-1.1.456-amd64.deb`
 1. Run R and install additional desired packages. *Note:* Installing packages as root installs those packages for all uesrs.
   1. `sudo apt-get install libssl-dev libcurl4-openssl-dev libxml2-dev wget` This fullfills some dependency requirements for desired packages.
   1. `sudo R`
-  1. `install.packages(c('tidyverse', 'bigrquery', 'devtools'))`
+  1. `install.packages(c('tidyverse', 'bigrquery', 'devtools', 'shiny', 'caTools', 'bitops'))`
   1. Verify packages have been installed correctly: `require("dplyr")` and `require('bigrquery')` etc.
 1. Install Nginx and add Let's Encrypt SSL cert https://certbot.eff.org/lets-encrypt/ubuntubionic-nginx 
   1. `sudo apt-get install nginx software-properties-common`
@@ -94,6 +94,20 @@ Steps:
       ```
       
   1. Symlink your `/etc/nginx/sites-available` file to `/etc/nginx/sites-enabled` sites-enabled is the directory that the nginx server will look in when starting up.
+  1. Optional Step: Force all http traffic to redirect to https (certbot can set this up for you if you want):
+      ```
+      server {
+          if ($host = yourdomain.tld) {
+              return 301 https://$host$request_uri;
+          } # managed by Certbot
+      
+             listen 80 ;
+             listen [::]:80 ;
+          server_name yourdomain.tld;
+          return 404; # managed by Certbot
+      }
+      ```
+      
   1. Resulting nginx configuration file should look like: https://gist.github.com/magic-lantern/1b5e11c3cf5964b69e8e7824df015c5d
   1. Before restarting nginx, test your configuration by running `nginx -t`. Fix any errors before restarting with `systemctl restart nginx`
   
