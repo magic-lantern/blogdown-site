@@ -12,7 +12,7 @@ tags:
 description: 'How to setup a Google Compute Engine instance to host your own RStudio Server'
 ---
 
-*Note:* Last updated October 19, 2018. This post is a work in progress.
+*Note:* Last updated October 26, 2018. This post is a work in progress.
 
 [RStudio Server](https://www.rstudio.com/products/rstudio-server-pro/)  ([download](https://www.rstudio.com/products/rstudio/download-server/)), is feature comparable to the desktop software [RStudio IDE](https://www.rstudio.com/products/rstudio/). RStudio Server is available under two different licensing models: "Open Source Edition: (AGPL v3), and "Commercial License."
 
