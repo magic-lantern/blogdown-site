@@ -47,13 +47,13 @@ Steps:
   1. `sudo apt-get upgrade`
   1. `apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E298A3A825C0D65DFD57CBB651716619E084DAB9`
   1. add this line to /etc/apt/sources.list: `deb https://cloud.r-project.org/bin/linux/ubuntu bionic-cran35/`
-  1. `sudo apt-get install r-base r-base-dev gdebi-core git subversion`
+  1. `sudo apt-get install r-base r-base-dev gdebi-core git subversion texlive texlive-latex-extra`
   1. `wget https://download2.rstudio.org/rstudio-server-1.1.456-amd64.deb`
   1. `sudo gdebi rstudio-server-1.1.456-amd64.deb`
 1. Run R and install additional desired packages. *Note:* Installing packages as root installs those packages for all uesrs.
   1. `sudo apt-get install libssl-dev libcurl4-openssl-dev libxml2-dev wget` This fullfills some dependency requirements for desired packages.
   1. `sudo R`
-  1. `install.packages(c('tidyverse', 'bigrquery', 'devtools', 'shiny', 'caTools', 'bitops'))`
+  1. `install.packages(c('tidyverse', 'bigrquery', 'devtools', 'shiny', 'caTools', 'bitops', 'dt'))`
   1. Verify packages have been installed correctly: `require("dplyr")` and `require('bigrquery')` etc.
 1. Install Nginx and add Let's Encrypt SSL cert https://certbot.eff.org/lets-encrypt/ubuntubionic-nginx 
   1. `sudo apt-get install nginx software-properties-common`
