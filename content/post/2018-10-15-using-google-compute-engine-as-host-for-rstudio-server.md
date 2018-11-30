@@ -12,7 +12,7 @@ tags:
 description: 'How to setup a Google Compute Engine instance to host your own RStudio Server'
 ---
 
-*Note:* Last updated October 26, 2018. This post is a work in progress.
+*Note:* Last updated November 30, 2018. This post is a work in progress.
 
 [RStudio Server](https://www.rstudio.com/products/rstudio-server-pro/)  ([download](https://www.rstudio.com/products/rstudio/download-server/)), is feature comparable to the desktop software [RStudio IDE](https://www.rstudio.com/products/rstudio/). RStudio Server is available under two different licensing models: "Open Source Edition: (AGPL v3), and "Commercial License."
 
@@ -47,7 +47,7 @@ Steps:
   1. `sudo apt-get upgrade`
   1. `apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E298A3A825C0D65DFD57CBB651716619E084DAB9`
   1. add this line to /etc/apt/sources.list: `deb https://cloud.r-project.org/bin/linux/ubuntu bionic-cran35/`
-  1. `sudo apt-get install r-base r-base-dev gdebi-core git subversion texlive texlive-latex-extra`
+  1. `sudo apt-get install r-base r-base-dev pandoc gdebi-core git subversion texlive texlive-latex-extra`
   1. `wget https://download2.rstudio.org/rstudio-server-1.1.456-amd64.deb`
   1. `sudo gdebi rstudio-server-1.1.456-amd64.deb`
 1. Run R and install additional desired packages. *Note:* Installing packages as root installs those packages for all uesrs.
