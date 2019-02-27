@@ -140,5 +140,9 @@ Central Washington University, Ellensburg, WA
 ## Publications
 
 * Feinstein JA, Russell S, DeWitt PE, Feudtner C, Dai D, Bennett TD. [R Package for Pediatric Complex Chronic Condition Classification](https://jamanetwork.com/journals/jamapediatrics/fullarticle/2677901). JAMA Pediatr. 2018;172(6):596-598. doi:10.1001/jamapediatrics.2018.0256
+* Russell S, Bennett TD, Ghosh D. Software engineering principles to improve quality and performance of R software. PeerJ Comput Sci. 2019 Feb 4;5:e175. Available from: https://peerj.com/articles/cs-175
+* Bennett T, Russell S, King J, Schilling L, Voong C, Rogers N, et al. Accuracy of the Epic Sepsis Prediction Model in a Regional Health System. arXiv:190207276. 2019 Feb 19; Available from: http://arxiv.org/abs/1902.07276
+* King J, Russell S, Bennett TD, Ghosh D. Kung Faux Pandas: Simplifying privacy protection. AMIA 2019 Informatics Summit. San Francisco, CA. March 2019
+* Mayer D, Russell S, Voong C, Kahn MG, Wiley LK. Developing a Scalable Programming Environment to Support MOOC Education in Clinical Data Science. AMIA 2019 Informatics Educators Forum. St. Louis, MO. June 2019.
 * Others currently under review related to current research at University of Colorado Anschutz Medical Campus
 
