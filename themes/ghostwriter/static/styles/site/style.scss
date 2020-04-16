@@ -90,7 +90,6 @@ img {
 }
 
 pre {
-    background: #F1F0EA;
     border: 1px solid #DDDBCC;
     border-radius: 3px;
     margin: 0 0 20px;
@@ -106,9 +105,8 @@ pre {
 code {
     padding: 2px 4px;
     font-size: 90%;
-    color: $primary;
-    background-color: #F1F0EA;
-    border-radius: 4px
+    border-radius: 4px;
+    background-color: #f1f0ea;
 }
 
 hr {
@@ -302,6 +300,7 @@ table {
 .page-title { margin: 15px 40px; }
 
 .post-date,
+.post-reading,
 .blog-description {
     color: #AEADAD;
     font-size: 14px;
@@ -311,7 +310,9 @@ table {
 
     a { color: #AEADAD; }
     a:hover { color: $primary; }
+}
 
+.post-line {
     &:after {
         border-bottom: 1px dotted $secondary;
         content: "";

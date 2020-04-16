@@ -1,25 +1,29 @@
 const path = require('path');
 const perfectionist = require('perfectionist');
 const discardComments = require('postcss-discard-comments');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const FixStyleOnlyEntriesPlugin = require("webpack-fix-style-only-entries");
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
 module.exports = {
   entry: {
-    styles: path.join(__dirname, 'static', 'styles'),
+    site: path.join(__dirname, 'static', 'styles', 'site'),
+    syntax: path.join(__dirname, 'static', 'styles', 'syntax'),
   },
   resolve: {
     modules: [
       'node_modules'
     ],
-    extensions: ['.js', '.scss'],
+    extensions: ['.scss'],
   },
   output: {
     path: path.join(__dirname, 'static', 'dist'),
-    filename: '[name].css'
   },
   plugins: [
-    new ExtractTextPlugin('[name].css'),
+    new FixStyleOnlyEntriesPlugin(),
+    new MiniCssExtractPlugin({
+      filename: '[name].css'
+    }),
     new OptimizeCssAssetsPlugin({
       cssProcessor: discardComments,
       canPrint: false
@@ -33,10 +37,10 @@ module.exports = {
     })
   ],
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.scss$/,
-        loader: ExtractTextPlugin.extract({ fallback: 'style-loader', use: 'css-loader!sass-loader' })
+        use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
       }
     ]
   }
