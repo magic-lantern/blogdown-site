@@ -1,4 +1,4 @@
-baseurl = "https://magic-lantern.github.io"
+baseurl = "https://magic-lantern.github.io/"
 title = "Seth Russell"
 theme = "ghostwriter"
 languageCode = "en-us"
